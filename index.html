@@ -3,63 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions</title>
+    <title>Objects</title>
   </head>
   <body>
     <script>
-      // let age = 21;
-      // function printAge() {
-      //   console.log(`Your age is : ${age}`);
-      // }
-      // printAge();
-      // age = 76;
-      // printAge();
-      // age = 40;
-      // printAge();
+      let product = {
+        company: "Mango",
+        price: 861,
+        "item-name": "T-shirt",
+      };
+      // console.log(product);
+      // console.log(product.company);
+      // console.log(product.price);
+      // console.log(product.item_name);
+      // product.company = "Apple";
+      // console.log(product);
 
-      // function generateRandomMove() {
-      //   let random = Math.random();
-      //   let randomMove = random * 100;
-      //   return randomMove;
-      // }
-      // let randomMove = generateRandomMove();
-      // console.log(randomMove);
-      // console.log(randomMove);
-      // console.log(randomMove);
-      // console.log(randomMove);
-      // console.log(randomMove);
-
-      // function determineDriveStatus() {
-      //   let age;
-      //   if (age === undefined) {
-      //     return "Aap Avtaar hain";
-      //   }
-      //   console.log("Checking drive status");
-      //   if (age > 18) {
-      //     return "You can drive";
-      //   } else {
-      //     return "Use a BiCycle";
-      //   }
-      // }
-
-      // console.log(determineDriveStatus());
-
-      // function sum(a, b) {
-      //   let sum = a + b;
-      //   return sum;
-      // }
-
-      // console.log(sum(4, 5));
-      // console.log(sum(2, 54));
-      // console.log(sum(40, 67));
-      // console.log(sum(34, 55));
-      // console.log(sum(15.4, 5));
-
-      function greeting(name = "Pyaare") {
-        console.log(`Namaste ${name} uncle`);
-      }
-
-      greeting();
+      console.log(product);
+      console.log(product["item-name"]);
+      delete product.company;
+      console.log(product);
     </script>
   </body>
 </html>
